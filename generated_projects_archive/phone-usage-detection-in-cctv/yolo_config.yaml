@@ -1,0 +1,26 @@
+
+You are a senior YOLO engineer.
+
+Task:
+Detect phone usage (person using a mobile phone) in indoor CCTV footage, such as offices or factories.
+
+Design a YOLO training CONFIGURATION including:
+
+1. Model variant (e.g., 'yolov8s', 'yolov8m') and justify the choice.
+2. Image size (imgsz).
+3. Batch size for a Colab T4 GPU.
+4. Number of epochs for a first run, and for a more refined run.
+5. Important hyperparameters (learning rate, optimizer, augmentations settings).
+6. Any recommended YOLO training tricks (cosine LR, warmup, etc.).
+
+Output:
+First, give a YAML-style block with keys like:
+- model
+- imgsz
+- batch
+- epochs
+- lr0
+- optimizer
+etc.
+
+Then give a short explanation in Markdown.
