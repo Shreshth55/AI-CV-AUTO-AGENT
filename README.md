@@ -52,3 +52,31 @@ Powered by an LLM that can later be fine-tuned with Unsloth.
                 │  Final Generated Project Folder           │
                 │  (ready for user to train & optimize)     │
                 └──────────────────────────────────────────┘
+
+
+
+```mermaid
+graph TD
+    %% Nodes
+    A[User Input<br/>'Detect phone usage in CCTV']
+    B[LLM Planner Unsloth-ready<br/>• dataset plan<br/>• YOLO config<br/>• training script outline<br/>• ONNX/TensorRT plan<br/>• project README]
+    C[Dataset Plan]
+    D[YOLO Config YAML]
+    E[Training Script .py]
+    F[ONNX/TensorRT Optimization<br/>Plan Markdown]
+    G[Final Generated Project Folder<br/>ready for user to train & optimize]
+
+    %% Edge connections
+    A --> B
+    B --> C
+    B --> D
+    B --> E
+    C --> F
+    D --> F
+    E --> F
+    F --> G
+
+    %% Styling (Optional - makes it look cleaner)
+    style A fill:#f9f,stroke:#333,stroke-width:2px,color:black
+    style B fill:#bbf,stroke:#333,stroke-width:2px,color:black
+    style G fill:#9f9,stroke:#333,stroke-width:2px,color:black
